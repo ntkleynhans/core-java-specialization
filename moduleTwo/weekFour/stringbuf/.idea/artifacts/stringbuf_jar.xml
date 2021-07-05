@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="stringbuf:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/stringbuf_jar</output-path>
+    <root id="archive" name="stringbuf.jar">
+      <element id="module-output" name="stringbuf" />
+    </root>
+  </artifact>
+</component>
