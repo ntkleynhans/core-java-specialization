@@ -9,6 +9,20 @@ public class ClassicalCD extends Item {
     private Date releaseDate;
     private int performerCount = 0;
 
+    public ClassicalCD() {
+        super();
+    }
+
+    public ClassicalCD(String title, double price, int quantity, String composer, String[] performers, String location, Date releaseDate) {
+        super(title, price, quantity);
+        setComposer(composer);
+        for(String performer : performers) {
+            addPerformer(performer);
+        }
+        setRecordingLocation(location);
+        setReleaseDate(releaseDate);
+    }
+
     public String getComposer() {
         return composer;
     }
