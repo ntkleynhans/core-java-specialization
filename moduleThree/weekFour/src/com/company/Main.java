@@ -11,7 +11,8 @@ public class Main {
         }
 
 
-	    int counter = redis.conversion("Hello", (s) -> s.length());
+	    int counter = redis.conversion("Hello", String::length);
+        //int counter = redis.conversion("Hello", (s) -> s.length());
 	    System.out.println(counter);
     }
 }
